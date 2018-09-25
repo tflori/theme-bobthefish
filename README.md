@@ -100,6 +100,7 @@ set -g fish_prompt_pwd_dir_length 0
 set -g theme_project_dir_length 1
 set -g theme_newline_cursor yes
 set -g theme_newline_prompt '$ '
+set -g theme_right_prompt_first_line yes
 ```
 
 **Title options**
@@ -123,6 +124,7 @@ set -g theme_newline_prompt '$ '
 - `theme_project_dir_length`. The same as `$fish_prompt_pwd_dir_length`, but for the path relative to the current project root. Defaults to `0`; set to any other number to show an abbreviated path.
 - `theme_newline_cursor`. Use `yes` to have cursor start on a new line. By default the prompt is only one line. When working with long directories it may be preferrend to have cursor on the next line. Setting this to `clean` instead of `yes` suppresses the caret on the new line.
 - `theme_newline_prompt`. Use a custom prompt with newline cursor. By default this is the chevron right glyph or `>` when powerline fonts are disabled.
+- `theme_right_prompt_first_line`. use `yes` to have the right prompt in the first line.
 
 **Color scheme options**
 

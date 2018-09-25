@@ -64,7 +64,13 @@ function fish_right_prompt -d 'bobthefish is all about the right prompt'
 
   set_color $fish_color_autosuggestion
 
+  if [ "$theme_right_prompt_first_line" = 'yes' ]
+    echo -e "\e[A"
+  end
   __bobthefish_cmd_duration
   __bobthefish_timestamp
   set_color normal
+  if [ "$theme_right_prompt_first_line" = 'yes' ]
+    echo -e "\e[B"
+  end
 end
